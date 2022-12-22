@@ -47,8 +47,12 @@ submitBtn.addEventListener("click", function(e) {
     // Mostra messaggio
     if (emailCheck == true) {
         resultContainer.innerHTML = "Email corretta. Accesso in corso..."
+        resultContainer.classList.remove("emailWrong");
+        resultContainer.classList.add("emailCorrect");
     }
     else {
         resultContainer.innerHTML = "Email non presente nel registro. Accesso negato."
+        resultContainer.classList.remove("emailCorrect");
+        resultContainer.classList.add("emailWrong");
     }
 });

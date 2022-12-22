@@ -1,0 +1,92 @@
+/* CSS RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #eee;
+}
+
+.container {
+    padding: 1rem;
+
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 1.5rem;
+    user-select: none;
+}
+
+form {
+    display: inline-block;
+    margin-bottom: 3rem;
+
+    border: 2px solid black;
+    box-shadow: 10px -10px 0px 0px black;
+    background-color: white;
+    padding: 1.5rem;
+}
+
+form > div:first-child {
+    margin-bottom: 2rem;
+}
+
+form input[type="mail"]{
+    width: 230px;
+    padding: 0.4rem;
+    margin-left: 0.5rem;
+
+    background: none;
+    border: none;
+
+    border-bottom: 2px solid rgb(107, 107, 107);
+    transition: all 0.1s;
+}
+
+form input[type="mail"]:focus {
+    outline: none;
+    border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+form input[type="submit"] {
+    padding: 0.5em 1.5em;
+    
+    background-color: rgb(166, 214, 233);
+    border: 2px solid black;
+    box-shadow: 3px -3px 0 0px black;
+}
+
+form input[type="submit"]:hover {
+    background-color: rgb(195, 232, 247);
+}
+
+form input[type="submit"]:active {
+    background-color: rgb(134, 192, 214);
+}
+
+.resultContainer  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.emailCorrect::before,
+.emailWrong::before {
+    font-family: FontAwesome;
+    margin-right: 1rem;
+    font-size: 1.5rem;
+}
+
+.emailCorrect::before {
+    content: "\f00c";
+    color: green;
+}
+
+.emailWrong::before {
+    content: "\f00d";
+    color: red;
+}
