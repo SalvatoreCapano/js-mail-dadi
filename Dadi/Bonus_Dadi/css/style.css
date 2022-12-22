@@ -1,0 +1,70 @@
+/* CSS RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: beige;
+}
+
+main {
+    width: fit-content;
+    margin: 0 auto;
+
+    border: 5px solid black;
+    padding: 2rem;
+    margin-top: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+    background-color: blanchedalmond;
+}
+
+#diceContainer {
+    padding: 1rem;
+
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+
+    display: flex;
+    gap: 1rem;
+}
+
+.dice {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 5px;
+
+    line-height: 100px;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.dice img {
+    width: 100%;
+}
+
+#rollBtn {
+    display: inline-block;
+    padding: 0.4em 1.5em;
+    background-color: white;
+    border: 1px solid black;
+}
+
+#rollBtn:hover {
+    background-color: rgb(231, 231, 231);
+}
+
+#rollBtn:active {
+    background-color: rgb(82, 82, 82);
+    color: white;
+}
